@@ -199,7 +199,7 @@ class IBMGestureDataset(Dataset):
 
         # Read input spike from input files (read only the part selected by sampleLength)
         inputSpikes = read2Dspikes(
-                        self.path + str(inputIndex.item()) + '.dat'
+                        # self.path + str(inputIndex.item()) + '.dat'
                         ).toSpikeTensor(torch.zeros((2,self.att_window[0],self.att_window[1],self.nTimeBins)),
                         samplingTime=self.samplingTime, shift_x=self.shift_x, shift_y= self.shift_y)
         # Create one-hot encoded desired matrix
