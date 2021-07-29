@@ -124,7 +124,7 @@ for i=4396:12335
         if write_output_files_train==1
             % write the output file in format: 
             % timestamp x-coordinate y-coordinate polarity
-            %%%%%%%%%%%%%%%%%%%%%%%%fprintf(to, '%d %d %d %d\n',data.ts(j),data.x(j),data.y(j),data.p(j));
+            fprintf(to, '%d %d %d %d\n',data.ts(j),data.x(j),data.y(j),data.p(j));
         end
     end
     if write_output_files_train==1
